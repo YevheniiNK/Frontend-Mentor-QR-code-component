@@ -1,0 +1,91 @@
+@import url("./nullstyle.css");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+/*  ## Colors
+
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+
+*/
+
+/*	## Fonts
+
+  - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+  - Weights: 400, 700
+
+*/
+
+/*  ## Body Copy
+
+  - Font size (paragraph): 15px
+
+*/
+
+/* Global style */
+:root {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 400; 
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+/* ================================================= */
+
+body {
+  background-color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+.card {
+  background-color: var(--white);
+  width: 320px;
+  border-radius: 19px;
+  padding: 16px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card > img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin: 20px 0;
+}
+
+.sup-title {
+  font-size: 1.5rem;
+  color: var(--grayish-blue);
+  margin-bottom: 20px;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.attribution > a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+/* Responsive */
+/* 1200 - 1450px */
+/* 992 - 1200px - .container max-width - 1140px */
+/* 768 - 992px - .container max-width - 960px */
+/* 576 - 768px - .container max-width - 720px */
+/* 479 - 576px .container max-width - 540px */
+/* 0 - 479px */
