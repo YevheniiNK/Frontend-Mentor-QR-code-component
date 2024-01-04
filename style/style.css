@@ -1,0 +1,62 @@
+@import url("./nullstyle.css");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+
+/* Global style */
+:root {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 400; 
+  --white: hsl(0, 0%, 100%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+    background-color: hsl(212, 45%, 89%);
+}
+
+/* ================================================= */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1;
+}
+
+.card {
+  background-color: var(--white);
+  width: 320px;
+  border-radius: 19px;
+  padding: 16px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card > img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin: 20px 0;
+}
+
+.sup-title {
+  font-size: 1.5rem;
+  color: var(--grayish-blue);
+  margin-bottom: 20px;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.attribution > a {
+  color: hsl(228, 45%, 44%);
+}
+
